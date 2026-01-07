@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sandra KS | Portfolio</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 <body>
 
-<!-- PARTICLE BACKGROUND -->
-<div id="particles-js"></div>
-
 <!-- NAVBAR -->
 <nav>
-  <h2>Sandra</h2>
-  <ul>
+  <div class="nav-left">Sandra</div>
+  <ul class="nav-right">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
@@ -30,80 +27,84 @@
 
 <!-- HERO -->
 <section class="hero">
-  <h1>I am <span id="typed"></span></h1>
-  <p>Data Science | ML | Research</p>
-  <a href="assets/Sandra_KS_resume.pdf" download class="btn">Download Resume</a>
+  <h1>I am Sandra KS</h1>
+  <p>Data Science | Machine Learning | Research</p>
+  <a class="btn" href="assets/Sandra_KS_resume.pdf" download>Download Resume</a>
 </section>
 
 <!-- ABOUT -->
 <section id="about" data-aos="fade-up">
   <h2>About Me</h2>
   <p>
-    Integrated MSc Data Science student passionate about ML, Healthcare AI,
-    and research-driven intelligent systems.
+    Integrated MSc Data Science student passionate about Machine Learning,
+    Healthcare AI, and research-driven intelligent systems.
   </p>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
-  <h2 data-aos="fade-up">Skills</h2>
+<section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
 
   <div class="skills-container">
-    <div class="skill-circle" data-percent="85">
-      <span>Python</span>
-    </div>
-    <div class="skill-circle" data-percent="75">
-      <span>Machine Learning</span>
-    </div>
-    <div class="skill-circle" data-percent="70">
-      <span>Data Analysis</span>
-    </div>
+    <div class="skill-circle">Python</div>
+    <div class="skill-circle">Machine Learning</div>
+    <div class="skill-circle">Data Analysis</div>
+    <div class="skill-circle">Deep Learning</div>
   </div>
 </section>
 
-<!-- EXPERIENCE TIMELINE -->
-<section id="experience">
-  <h2 data-aos="fade-up">Experience</h2>
+<!-- EXPERIENCE -->
+<section id="experience" data-aos="fade-up">
+  <h2>Experience</h2>
 
-  <div class="timeline">
-    <div class="timeline-item" data-aos="fade-right">
-      <h3>Research Intern</h3>
-      <span>Digital University Kerala</span>
-      <p>Graph-based ML models for acoustic signal processing.</p>
-    </div>
+  <div class="experience-box">
+    <h3>Research Intern</h3>
+    <span>Digital University Kerala</span>
+    <p>
+      Worked on graph-based machine learning models for acoustic signal
+      processing and conducted extensive literature review.
+    </p>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
-  <h2 data-aos="fade-up">Projects</h2>
+<section id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
 
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>Heart Disease Prediction</h3>
-    </div>
-    <div class="project-card">
-      <h3>Mental Health Stress Tracker</h3>
-    </div>
+  <div class="projects-grid">
+    <div class="project-card">Heart Disease Prediction</div>
+    <div class="project-card">Mental Health Stress Tracker</div>
+    <div class="project-card">Cyclone Prediction System</div>
+    <div class="project-card">Crop Production Dashboard</div>
+    <div class="project-card">Gold Price Forecasting</div>
+    <div class="project-card">GNN Acoustic Signal Modeling</div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" data-aos="fade-up">
   <h2>Contact</h2>
-  <p>Email: sandrakaveesher@gmail.com</p>
+
+  <div class="contact-box">
+    <p>Email: <a href="mailto:sandrakaveesher@gmail.com">sandrakaveesher@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/kssandraeshwar" target="_blank">kssandraeshwar</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/sandrasmithakaveesher" target="_blank">Sandra KS</a></p>
+  </div>
 </section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Sandra KS</p>
+</footer>
 
 <!-- JS -->
 <script src="js/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
 <script>
-  AOS.init();
+  AOS.init({ duration: 900, once: true });
 </script>
 
 </body>
 </html>
+
 
