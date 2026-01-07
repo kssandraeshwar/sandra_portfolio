@@ -13,7 +13,8 @@ html {
 
 body {
   font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #0f172a, #1e293b); /* Slate Blue */
+  background: background: linear-gradient(135deg, #0f172a, #334155);
+
   color: #e5e7eb;
   line-height: 1.6;
 }
